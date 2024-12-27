@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Build C++ Project", // Task name
+          "type": "shell",
+          "command": "g++", // Compiler command
+          "args": [
+              "-g", // Include debugging information
+              "main.cpp", "TwoStackAlgo.cpp", "Token.cpp", // Source files
+              "-o", "main.exe" // Output file
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "problemMatcher": ["$gcc"]
+      }
+  ]
+}
